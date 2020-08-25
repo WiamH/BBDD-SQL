@@ -1,0 +1,2 @@
+# git-exercici
+consultes SQL
