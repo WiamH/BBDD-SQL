@@ -2,7 +2,7 @@ CREATE TABLE `clientes` (
   `c_id` int(3) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `c_nom` varchar(45) NOT NULL,
   `c_tlf` varchar(9) NOT NULL,
-  `c_adresa` VARCHAR(250) NOT NULL,
+  `c_adresa` varchar(250) NOT NULL,
   `c_alta` date NOT NULL
 
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -11,12 +11,9 @@ CREATE TABLE `clientes` (
 -- Volcado de datos para la tabla `clientes`
 --
 
-INSERT INTO `clientes` (`c_nom`, `C_tlf`, `C_adresa`, `C_alta` ) VALUES
-(`carla`, `936458778`, `Carrer platos, 15 -08909`, '2020-08-19' ),
-(`carla`, `936458778`, `Carrer platos, 15 -08909`, '2020-08-19' ),
-(`carla`, `936458778`, `Carrer platos, 15 -08909`, '2020-08-19' ),
-(`carla`, `936458778`, `Carrer platos, 15 -08909`, '2020-08-19' ),
-(`carla`, `936458778`, `Carrer platos, 15 -08909`, '2020-08-19' );
+INSERT INTO `clientes` (`c_nom`, `c_tlf`, `c_adresa`, `c_alta` ) VALUES
+('Carla', '936458778', `Carrer platos, 15 -08909', '2020-08-19'),
+('Marta', '9364587555', 'Carrer platos, 15 -08909', '2020-08-19');
 
 -- --------------------------------------------------------
 
@@ -33,7 +30,7 @@ CREATE TABLE `ulleres` (
   `u_montura` VARCHAR(20) NOT NULL,
   `u_monturaColor` VARCHAR(25) NOT NULL,
   `u_colorVidre` VARCHAR(25) NOT NULL,
-  `u_preu` int(4) NOT NULL,
+  `u_preu` int(4) NOT NULL
 
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -42,8 +39,9 @@ CREATE TABLE `ulleres` (
 --
 
 INSERT INTO `ulleres` (`u_marca`, `u_graus-D`, `u_graus-E`, `u_montura`, `u_monturaColor`, `u_colorVidre`, `u_preu`), VALUES
-(`u_marca`, `u_graus-D`, `u_graus-E`, `u_montura`, `u_monturaColor`, `u_colorVidre`, `u_preu`),
-(`u_marca`, `u_graus-D`, `u_graus-E`, `u_montura`, `u_monturaColor`, `u_colorVidre`, `u_preu`);
+('u_marca', '5', '2', 'flotant', 'blanc', 'negre', '250'),
+('tu_marca', '0', '1', 'metal�lica', 'gris', 'taronja', '550'),
+('su_marca', '4', '0', 'pasta', 'blau', 'transparent', '57');
 
 -- --------------------------------------------------------
 
@@ -70,8 +68,8 @@ ALTER TABLE `proveidors`
 
 
 INSERT INTO `proveidors` (`prov_nom`, `prov_tlf`, `prov_fax`, `prov_adresa`, `prov_NIF`) VALUES
-(`prov_nom`, `prov_tlf`, `prov_fax`, `prov_adresa`, `prov_NIF`),
-(`prov_nom`, `prov_tlf`, `prov_fax`, `prov_adresa`, `prov_NIF`);
+('proveiulleres', '936458215', '936458218', 'adreça', 'L75846989'),
+(`prov_nom`, '94658215', '93658865', 'adreça', 'L75846000');
 
 -- --------------------------------------------------------
 
@@ -80,11 +78,9 @@ INSERT INTO `proveidors` (`prov_nom`, `prov_tlf`, `prov_fax`, `prov_adresa`, `pr
 --
 
 
-CREATE TABLE `empleats`
-
-(
+CREATE TABLE `empleats`(
   `em_id` int(4) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `em_nom` varchar(30) NOT NULL,
+  `em_nom` varchar(30) NOT NULL
 	
 	
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -102,7 +98,6 @@ INSERT INTO `empleats` (`em_nombre`) VALUES
 --
 -- Estructura de tabla para la tabla `ventas`
 --
-
 
 
 CREATE TABLE `ventas` (
@@ -127,7 +122,6 @@ INSERT INTO `pedidos` (`c_id`, `u_id`,  `em_id`, `f_pedido`) VALUES
 (3, 4, 2, '2020-08-19'),
 (4, 2, 1, '2020-08-19'),
 (5, 2, 1,'2020-08-19');
-
 
 
 -- --------------------------------------------------------
