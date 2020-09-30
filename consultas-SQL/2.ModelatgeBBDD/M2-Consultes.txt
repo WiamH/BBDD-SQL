@@ -1,0 +1,28 @@
+SQL - consultes M2
+
+1.- SELECT count(colYear) FROM usaflights.flights;
+
+2.- SELECT Origin, AVG(ArrDelay) AS prom_arribades, AVG(DepDelay) AS prom_sortides
+    FROM usaflights.flights
+    GROUP BY Origin;
+
+3.-SELECT Origin, colYear, colMonth, AVG (ArrTime) AS prom_arribades
+    FROM usaflights.flights
+    GROUP BY Origin;
+
+4.- SELECT Origin, colYear, colMonth, AVG (ArrDelay) AS prom_arribades
+    FROM usaflights.flights
+    GROUP BY Origin;
+
+5.- SELECT UniqueCarrier, colYear, colMonth, sum(Cancelled) AS total_cancelled
+    FROM usaflights.flights
+    GROUP BY UniqueCarrier;
+
+6.- SELECT TailNum, sum(Distance) AS total_distance
+    FROM usaflights.flights
+    GROUP BY UniqueCarrier;
+
+7.- SELECT UniqueCarrier, avg(ArrDelay) AS prom_retard 
+    FROM usaflights.flights
+    WHERE ArrDelay > 10
+    GROUP BY UniqueCarrier;
