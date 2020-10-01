@@ -1,14 +1,14 @@
 /**29/09/2020
  * @author wiamh
  * excercicis iTAcademy 
- * m1- : Líexercici consisteix en crear diferents 
- *       variables i treballar amb elles.
- *       estar· dividido en 4 fases, que fromar·n las clases.
+ * m1- : El ejercicio consiste en crear diferentes
+ * 	 Variables y trabajar con ellas.
+ *       estar√° dividido en 4 fases, que fromar√°n las clases.
  *       
  *       F1.Variable tipus String
  *       F2.Variable tipus Int
- *       F3.Indicar si el aÒo es bisiesto
- *       F.4 Imprimir toda la informaciÛn recogida por pantalla.
+ *       F3.Indicar si el a√±o es bisiesto
+ *       F.4 Imprimir toda la informaci√≥n recogida por pantalla.
  */
 
 package m01;
@@ -25,9 +25,9 @@ public class M1 {
         
         //Declarar las variables nombre de tipo String y Fecha nacimiento de tipo Int
         String nom, app1, app2;
-        int any;                   // aÒo
+        int any;                   // a√±o
         int mes;                     // mes [1,...,12]
-        int dia;                // dÌa [1,...,31]
+        int dia;                // d√≠a [1,...,31]
         
         //F1: Solicitar nombre y apellidos al suario
         System.out.println("Hola.. Escriu els teus cognoms i nom, si us plau:");
@@ -37,17 +37,17 @@ public class M1 {
         System.out.println("Ahora ingresa fecha nacimiento");
         dia=objeto.nextInt( );mes=objeto.nextInt( );any=objeto.nextInt( );
         if (any < 1900) {
-            throw new IllegalArgumentException("AÒo inv·lido.");
+            throw new IllegalArgumentException("A√±o inv√°lido.");
         } 
 
-        //F4: Esto es el mensaje que se mostrar· por pantalla
-        System.out.println ("El meu nom Ès " +nom+ " " +app1+" "+app2+ 
-        					" Vaig nÈixer " +dia+"/"+mes+"/"+any);
+        //F4: Esto es el mensaje que se mostrar√° por pantalla
+        System.out.println ("El meu nom √©s " +nom+ " " +app1+" "+app2+ 
+        					" Vaig n√©ixer " +dia+"/"+mes+"/"+any);
         
-      //F3: saber si un aÒo es o no bisiesto
+      //F3: saber si un a√±o es o no bisiesto
         if ((any % 4 == 0) && ((any % 100 != 0) || (any % 400 == 0)))
-        	System.out.println("El meu any de naixement Ès de trasp·s");
+        	System.out.println("El meu any de naixement √©s de trasp√°s");
         else
-        	System.out.println("El meu any de naixement NO Ès de trasp·s");
+        	System.out.println("El meu any de naixement NO √©s de trasp√°s");
 	}
 }
