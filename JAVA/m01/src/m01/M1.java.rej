@@ -1,0 +1,16 @@
+diff a/JAVA/m01/src/m01/M1.java b/JAVA/m01/src/m01/M1.java	(rejected hunks)
+@@ -3,12 +3,12 @@
+  * excercicis iTAcademy 
+  * m1- : L�exercici consisteix en crear diferents 
+  *       variables i treballar amb elles.
+- *       estar� dividido en 4 fases, que fromar�n las clases.
++ *       estar� dividido en 4 fases:
+  *       
+  *       F1.Variable tipus String
+  *       F2.Variable tipus Int
+  *       F3.Indicar si el a�o es bisiesto
+- *       F.4 Imprimir toda la informaci�n recogida por pantalla.
++ *       F4. Imprimir toda la informaci�n recogida por pantalla.
+  */
+ 
+ package m01;
