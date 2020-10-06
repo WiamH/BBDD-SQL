@@ -3,12 +3,12 @@
  * excercicis iTAcademy 
  * m1- : L’exercici consisteix en crear diferents 
  *       variables i treballar amb elles.
- *       estará dividido en 4 fases, que fromarán las clases.
+ *       estará dividido en 4 fases:
  *       
  *       F1.Variable tipus String
  *       F2.Variable tipus Int
  *       F3.Indicar si el año es bisiesto
- *       F.4 Imprimir toda la información recogida por pantalla.
+ *       F4. Imprimir toda la información recogida por pantalla.
  */
 
 package m01;
