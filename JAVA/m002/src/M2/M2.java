@@ -4,33 +4,60 @@
  * m2- : El ejercicio consiste en mostrar por consola cuántas veces aparece cada letra 
  * 		 de tu nombre y apellidos con diferentes variantes (fases).
  *       En 4 fases:
- *       
- *       F1.Crear tabla
- *       F2.Crear lista
- *       F3.Guardar letras y las veces que aparece
- *       F4.Aplicar a apellido y fusionar en una sola lista
+ *       			F1.Solicitar nombre y apellido por consola después crear array
+ *       			F2.Contar vocales y consonantes
+ *       			F3.Contar letras y las veces que aparece
+ *       			F4.Aplicar a apellido y fusionar en una sola lista
  */
 
 package M2;
 
-import java.util.Scanner;
+import java.util.Scanner; 
+
 
 public class M2 {
 
-	//Este metodo es el principal de todos los programas en java. 
-	//Nunca debe de faltar
-public static void main(String[] args) {
-Scanner entrada=new Scanner(System.in);
-int array[] = {1,12,4,5,7,9,0,9,6,7};
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	    
+		//F0.Declarar variables
+	    String nomicog="";
+	    char [] arrCadena;
+	    char caracter;
+	    int numVegades = 0;
+	    
+	    //F1.Solicitar nombre y apellido por consola después crear array
+	    //F4.Aplicar a apellido y fusionar en una sola lista
+	    System.out.println("Introduzca su nombre y primer apellido: ");
+	                nomicog = sc.nextLine();
+	                arrCadena = nomicog.toCharArray();               
+	    
+	    //F2.Contar vocales y consonantes
+	    String vocals = nomicog.replaceAll("(?i)[^aeiouáéíóúàèìòùâêîôûäëïöü]", ""); int numVocals = vocals.length();
+	    	    
+	    int numConsonants = nomicog.replaceAll("(?i)[^bcdfghjklmnpqrstvwxyz]", "").length();
+	   
+	    int numSpaces = nomicog.replaceAll("[^ ]", "").length();
+	    	    
+	    int resultado = numVocals+numConsonants;
+	    	
+	    System.out.println("->Total caracteres: " + resultado);
+	    System.out.println("-->Vocales: " + numVocals); System.out.println("-->Consonantes: " + numConsonants); System.out.println("-->Espacios: " + numSpaces);
+	    
+	    //F3.Contar letras y las veces que aparece
+	    for (int x=0; x < arrCadena.length; x++) {
+	    	caracter = arrCadena[x];
+	    	for (int z=0; z < arrCadena.length; z++) {
+	    		if (arrCadena[z]== caracter) {
+	    			numVegades++;
+	    		}		
+	    	}
 
-for (int i = 0; i < array.length; i++) {
-	System.out.println(array[i]);
+	    	System.out.println(arrCadena[x]+" "+numVegades);
+		    		numVegades=0;
+	    } 
+	}
 }
-
-//F1
-//F2
-//F3
-//F4
-}
-}
-
+	/* COMENTARIO FINAL: No he utilizado ArrayList para fusionar nombre y apellido,
+	 * he solicitado la información por consola */
+	
