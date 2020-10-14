@@ -1,6 +1,7 @@
 /**29/09/2020
  * @author wiamh
  * excercicis iTAcademy 
+<<<<<<< HEAD
  * m1- : L’exercici consisteix en crear diferents 
  *       variables i treballar amb elles.
  *       estará dividido en 4 fases:
@@ -9,6 +10,16 @@
  *       F2.Variable tipus Int
  *       F3.Indicar si el año es bisiesto
  *       F4. Imprimir toda la información recogida por pantalla.
+=======
+ * m1- : El ejercicio consiste en crear diferentes
+ * 	 Variables y trabajar con ellas.
+ *       estarÃ¡ dividido en 4 fases, que fromarÃ¡n las clases.
+ *       
+ *       F1.Variable tipus String
+ *       F2.Variable tipus Int
+ *       F3.Indicar si el aÃ±o es bisiesto
+ *       F.4 Imprimir toda la informaciÃ³n recogida por pantalla.
+>>>>>>> 220cc6c4e3aec36069cc6499fd9c800db424d551
  */
 
 package m01;
@@ -25,9 +36,9 @@ public class M1 {
         
         //Declarar las variables nombre de tipo String y Fecha nacimiento de tipo Int
         String nom, app1, app2;
-        int any;                   // año
+        int any;                   // aÃ±o
         int mes;                     // mes [1,...,12]
-        int dia;                // día [1,...,31]
+        int dia;                // dÃ­a [1,...,31]
         
         //F1: Solicitar nombre y apellidos al suario
         System.out.println("Hola.. Escriu els teus cognoms i nom, si us plau:");
@@ -37,17 +48,17 @@ public class M1 {
         System.out.println("Ahora ingresa fecha nacimiento");
         dia=objeto.nextInt( );mes=objeto.nextInt( );any=objeto.nextInt( );
         if (any < 1900) {
-            throw new IllegalArgumentException("Año inválido.");
+            throw new IllegalArgumentException("AÃ±o invÃ¡lido.");
         } 
 
-        //F4: Esto es el mensaje que se mostrará por pantalla
-        System.out.println ("El meu nom és " +nom+ " " +app1+" "+app2+ 
-        					" Vaig néixer " +dia+"/"+mes+"/"+any);
+        //F4: Esto es el mensaje que se mostrarÃ¡ por pantalla
+        System.out.println ("El meu nom Ã©s " +nom+ " " +app1+" "+app2+ 
+        					" Vaig nÃ©ixer " +dia+"/"+mes+"/"+any);
         
-      //F3: saber si un año es o no bisiesto
+      //F3: saber si un aÃ±o es o no bisiesto
         if ((any % 4 == 0) && ((any % 100 != 0) || (any % 400 == 0)))
-        	System.out.println("El meu any de naixement és de traspás");
+        	System.out.println("El meu any de naixement Ã©s de traspÃ¡s");
         else
-        	System.out.println("El meu any de naixement NO és de traspás");
+        	System.out.println("El meu any de naixement NO Ã©s de traspÃ¡s");
 	}
 }
