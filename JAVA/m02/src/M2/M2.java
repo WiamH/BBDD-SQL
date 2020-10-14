@@ -42,7 +42,9 @@ public class M2 {
 	    int resultado = numVocals+numConsonants;
 	    	
 	    System.out.println("->Total caracteres: " + resultado);
-	    System.out.println("-->Vocales: " + numVocals); System.out.println("-->Consonantes: " + numConsonants); System.out.println("-->Espacios: " + numSpaces);
+	    System.out.println("-->Vocales: " + numVocals);
+	    System.out.println("-->Consonantes: " + numConsonants); 
+	    System.out.println("-->Espacios: " + numSpaces);
 	    
 	    //F3.Contar letras y las veces que aparece
 	    for (int x=0; x < arrCadena.length; x++) {
@@ -52,7 +54,8 @@ public class M2 {
 	    			numVegades++;
 	    		}		
 	    	}
-
+	    	System.out.println("--->Las veces que se repite el carácter "
+	    			+ "(*si sale el número solo = espacio*): ");
 	    	System.out.println(arrCadena[x]+" "+numVegades);
 		    		numVegades=0;
 	    } 
