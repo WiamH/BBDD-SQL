@@ -12,8 +12,8 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`c_nom`, `c_tlf`, `c_adresa`, `c_alta` ) VALUES
-('Carla', '936458778', 'Carrer platos', '15 -08909', '2020-08-19'),
-('Marta', '9364587555', 'Carrer romeros', '02 -08001', '2020-08-19');
+('Carla', '936458778', 'Carrer platos, 15 -08909', '2020-08-19'),
+('Marta', '9364587555', 'Carrer romeros, 02 -08001', '2020-08-19');
 
 -- --------------------------------------------------------
 
@@ -38,10 +38,10 @@ CREATE TABLE `ulleres` (
 -- Volcado de datos para la tabla `ulleres`
 --
 
-INSERT INTO `ulleres` (`u_marca`, `u_graus-D`, `u_graus-E`, `u_montura`, `u_monturaColor`, `u_colorVidre`, `u_preu`) VALUES
-('u_marca', '5', '2', 'flotant', 'blanc', 'negre', '250'),
-('tu_marca', '0', '1', 'metal·lica', 'gris', 'taronja', '550'),
-('su_marca', '4', '0', 'pasta', 'blau', 'transparent', '57');
+INSERT INTO `ulleres` (`prov_marca_model`, `u_graus-D`, `u_graus-E`, `u_montura`, `u_monturaColor`, `u_colorVidre`, `u_preu`) VALUES
+('001', '5', '2', 'flotant', 'blanc', 'negre', '250'),
+('002', '0', '1', 'metal·lica', 'gris', 'taronja', '550'),
+('003', '4', '0', 'pasta', 'blau', 'transparent', '57');
 
 -- --------------------------------------------------------
 
@@ -89,9 +89,9 @@ CREATE TABLE `empleats`(
 -- Volcado de datos para la tabla `empleats`
 --
 
-INSERT INTO `empleats` (`em_nombre`) VALUES
-(`Juan`),
-(`Rosa`),
+INSERT INTO `empleats` (`em_nom`) VALUES
+('Juan'),
+('Rosa');
 
 -- --------------------------------------------------------
 

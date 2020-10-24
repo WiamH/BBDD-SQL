@@ -1,4 +1,4 @@
-"u_id";"u_marca";"u_graus-D";"u_graus-E";"u_montura";"u_monturaColor";"u_colorVidre";"u_preu"
-1;"u_mark";"5";"2";"flotant";"blanc";"negre";250
-2;"tu_marca";"0";"1";"metal·lica";"gris";"taronja";550
-3;"su_marca";"4";"0";"pasta";"blau";"transparent";57
+"u_id";"prov_marca_model";"u_graus-D";"u_graus-E";"u_montura";"u_monturaColor";"u_colorVidre";"u_preu"
+4;1;"5";"2";"flotant";"blanc";"negre";250
+5;2;"0";"1";"metal·lica";"gris";"taronja";550
+6;3;"4";"0";"pasta";"blau";"transparent";57
