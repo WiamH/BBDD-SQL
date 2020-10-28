@@ -1,1 +1,16 @@
-/JAVA/m1/nbproject/private/
+# IGNORE FILES OR GIT
+
+#Compiles source#
+#################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+#Packages#
+##########
+*.7z
+*.dmg
+*.gz
