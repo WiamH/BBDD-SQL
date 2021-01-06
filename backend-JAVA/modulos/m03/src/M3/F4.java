@@ -1,2 +1,4 @@
-package M3;public class F4 {
+package M3;
+
+public class F4 {
 }
